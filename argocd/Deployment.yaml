@@ -16,4 +16,4 @@ spec:
       - name: bulut-bilisim-project-kub
         image: furkansaglams/bulutbilisimdockerhub:v7
         ports:
-        - containerPort: 8080
+        - containerPort: 8080
