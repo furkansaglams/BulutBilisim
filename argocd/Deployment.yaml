@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: bulutbilisim-kub
-        image: furkansaglams/bulutbilisimdockerhub:v7
+        image: furkansaglams/bulutbilisimdockerhub:v1
         ports:
         - containerPort: 8080
