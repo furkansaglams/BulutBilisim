@@ -14,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Uygulamayı çalıştır
-CMD ["python", "uygulama.py"]
+CMD ["python","uygulama.py"]
