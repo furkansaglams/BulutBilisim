@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v7
 kind: Service
 metadata:
   name: bulut-bilisim-project-service
