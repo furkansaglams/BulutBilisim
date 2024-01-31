@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bulutbilisim
+  name: bulut-bilisim-project
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bulutbilisim
+      app: bulut-bilisim-project
   template:
     metadata:
       labels:
-        app: bulutbilisim
+        app: bulut-bilisim-project
     spec:
       containers:
-      - name: bulutbilisim-kub
+      - name: bulut-bilisim-project-kub
         image: furkansaglams/bulutbilisimdockerhub:v7
         ports:
-        - containerPort: 8080
+        - containerPort: 8080

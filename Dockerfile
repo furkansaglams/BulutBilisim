@@ -1,11 +1,17 @@
-FROM python:3.8-slim
+# İlk olarak bir temel imaj belirle
+FROM python:3.9
 
+# Çalışma dizinini ayarla
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+# Gerekli dosyaları kopyala
+COPY requirements.txt .
 
+# Bağımlılıkları yükle
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Uygulama kodunu kopyala
 COPY . .
 
-CMD ["python", "app.py"]
-
+# Uygulamayı çalıştır
+CMD ["python", "uygulama.py"]

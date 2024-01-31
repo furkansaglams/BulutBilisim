@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bulutbilisimservice
+  name: bulut-bilisim-project-service
 spec:
   selector:
-    app: bulutbilisimservice
+    app: bulut-bilisim-project
   ports:
     - protocol: TCP
       port: 80
       targetPort: 8080
-  type: LoadBalancer
+  type: LoadBalancer
